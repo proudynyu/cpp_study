@@ -3,6 +3,11 @@
 
 #include <iostream>
 
-void header_text();
+inline void header_text()
+{
+  std::cout << "*******************************" << std::endl;
+  std::cout << "* Welcome to the Hangman Game *" << std::endl;
+  std::cout << "*******************************" << std::endl;
+}
 
 #endif
