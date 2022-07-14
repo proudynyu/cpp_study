@@ -1,6 +1,6 @@
 #include "letter_exists.hpp"
 
-bool letter_exists(char letter, std::string secret)
+bool letter_exists(const char& letter, const std::string& secret)
 {
   for (char c : secret)
   {

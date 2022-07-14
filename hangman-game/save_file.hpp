@@ -6,6 +6,6 @@
 #include <fstream>
 #include <iostream>
 
-void save_file(std::vector<std::string> words);
+void save_file(std::vector<std::string>& words);
 
 #endif

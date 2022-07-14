@@ -4,6 +4,6 @@
 #include <vector>
 #include <iostream>
 
-void wrong_guess_words(std::vector<char> wrongGuess);
+void wrong_guess_words(std::vector<char>& wrongGuess);
 
 #endif

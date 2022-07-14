@@ -3,6 +3,6 @@
 
 #include <string>
 
-bool letter_exists(char letter, std::string secret);
+bool letter_exists(const char& letter, const std::string& secret);
 
 #endif

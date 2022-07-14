@@ -1,0 +1,11 @@
+.clangd
+.codelite
+.ctagsd
+.vscode
+
+**.project
+**.workspace
+
+compile_commands.json
+
+**.o

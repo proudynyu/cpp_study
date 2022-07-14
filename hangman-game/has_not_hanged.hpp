@@ -3,6 +3,6 @@
 
 #include <vector>
 
-bool has_not_hanged(std::vector<char> wrongGuess);
+bool has_not_hanged(const std::vector<char>& wrongGuess);
 
 #endif
