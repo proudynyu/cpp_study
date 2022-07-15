@@ -4,6 +4,6 @@
 #include <iostream>
 #include <map>
 
-void hanged_words(const std::map<char, bool> guessed, const std::string secret);
+void hanged_words(std::map<char, bool>& guessed, const std::string &secret);
 
 #endif

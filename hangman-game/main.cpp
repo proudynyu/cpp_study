@@ -11,8 +11,8 @@
 #include "add_new_word.hpp"
 #include "wrong_guess_words.hpp"
 
-std::map<char, bool> guessed;
-std::vector<char> wrongGuess;
+static std::map<char, bool> guessed;
+static std::vector<char> wrongGuess;
 
 int main()
 {
