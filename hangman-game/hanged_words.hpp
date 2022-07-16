@@ -4,6 +4,8 @@
 #include <iostream>
 #include <map>
 
-void hanged_words(std::map<char, bool>& guessed, const std::string &secret);
+namespace Hangman {
+	void hanged_words(std::map<char, bool>& guessed, const std::string &secret);
+}
 
 #endif

@@ -6,6 +6,8 @@
 #include <string>
 #include <iostream>
 
-std::vector<std::string> read_file();
+namespace Hangman {
+	std::vector<std::string> read_file();
+}
 
 #endif

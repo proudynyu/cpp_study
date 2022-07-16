@@ -14,6 +14,8 @@
 static std::map<char, bool> guessed;
 static std::vector<char> wrongGuess;
 
+using namespace Hangman;
+
 int main()
 {
   header_text();

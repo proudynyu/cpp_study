@@ -3,6 +3,8 @@
 
 #include <vector>
 
-bool has_not_hanged(const std::vector<char>& wrongGuess);
+namespace Hangman {
+	bool has_not_hanged(const std::vector<char>& wrongGuess);
+}
 
 #endif

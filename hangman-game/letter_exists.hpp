@@ -3,6 +3,8 @@
 
 #include <string>
 
-bool letter_exists(const char& letter, const std::string& secret);
+namespace Hangman {
+	bool letter_exists(const char& letter, const std::string& secret);
+}
 
 #endif

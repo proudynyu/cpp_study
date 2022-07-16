@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 
-void add_new_word();
+namespace Hangman {
+	void add_new_word();
+}
 
 #endif

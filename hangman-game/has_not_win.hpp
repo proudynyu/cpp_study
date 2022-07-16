@@ -4,6 +4,8 @@
 #include <iostream>
 #include <map>
 
-bool has_not_win(const std::map<char, bool>& guessed, const std::string& secret);
-
+namespace Hangman {
+	bool has_not_win(const std::map<char, bool>& guessed, const std::string& secret);
+}
 #endif
+

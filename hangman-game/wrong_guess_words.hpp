@@ -4,6 +4,8 @@
 #include <vector>
 #include <iostream>
 
-void wrong_guess_words(const std::vector<char>& wrongGuess);
+namespace Hangman {
+	void wrong_guess_words(const std::vector<char>& wrongGuess);
+}
 
 #endif

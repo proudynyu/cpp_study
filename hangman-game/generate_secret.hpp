@@ -5,6 +5,8 @@
 #include <vector>
 #include <random>
 
-std::string generate_secret();
+namespace Hangman {
+	std::string generate_secret();
+}
 
 #endif
