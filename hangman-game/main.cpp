@@ -1,4 +1,6 @@
 #include <iostream>
+#include <array>
+#include <map>
 
 #include "header_text.hpp"
 #include "letter_exists.hpp"
@@ -12,7 +14,7 @@
 #include "wrong_guess_words.hpp"
 
 static std::map<char, bool> guessed;
-static std::vector<char> wrongGuess;
+static std::array<char, 5> wrongGuess;
 
 using namespace Hangman;
 
@@ -24,7 +26,7 @@ int main()
 
   while (has_not_hanged(wrongGuess) && has_not_win(guessed, SECRET))
   {
-
+    int guessIndex = 0;
     wrong_guess_words(wrongGuess);
 
     hanged_words(guessed, SECRET);
@@ -42,7 +44,8 @@ int main()
     else
     {
       std::cout << "Your guess was wrong" << std::endl;
-      wrongGuess.push_back(guess);
+      wrongGuess[guessIndex] = guess;
+      guessIndex++;
     }
   }
 
