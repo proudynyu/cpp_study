@@ -6,10 +6,11 @@
 class Account
 {
 public:
+	Account();
   void withdraw(float withdrawValue);
   void deposit(float depositValue);
   float getAccountValue();
-  std::string setOwnerName(std::string newOwnerName);
+  void setOwnerName(std::string newOwnerName);
   std::string getAccountOwner();
 
 private:
