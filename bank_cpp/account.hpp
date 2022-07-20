@@ -1,20 +1,22 @@
-#pragma once
+#ifndef ACCOUNT_H
+#define ACCOUNT_H
 
-#ifndef ACCOUNT_HPP
-#define ACCOUNT_HPP
+#include<string>
 
-#include <string>
+class Account
+{
+public:
+  void withdraw(float withdrawValue);
+  void deposit(float depositValue);
+  float getAccountValue();
+  std::string setOwnerName(std::string newOwnerName);
+  std::string getAccountOwner();
 
-class Account {
-  public:
-    void withdraw(float withdrawValue);
-    void deposit(float depositValue);
-
-  private:
-    std::string accNumber;
-	  std::string ownerCpf;
-	  std::string ownerName;
-	  float value;
-}
+private:
+  std::string accNumber;
+  std::string ownerCpf;
+  std::string ownerName;
+  float accountValue;
+};
 
 #endif
