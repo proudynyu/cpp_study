@@ -11,7 +11,7 @@ public:
 	void withdraw(float withdrawValue);
 	void deposit(float depositValue);
 	const float getAccountValue();
-	std::string getAccountOwner();
+	const std::string getAccountOwner();
 
 private:
 	std::string accNumber;
