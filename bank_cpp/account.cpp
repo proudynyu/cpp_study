@@ -1,8 +1,8 @@
 #include"account.hpp"
 
-Account::Account() 
+Account::Account(std::string owner_cpf, std::string owner_name, std::string account_number):
+accNumber(account_number), ownerName(owner_name), ownerCpf(owner_cpf), accountValue(0)
 {
-	accountValue = 0;
 }
 
 void Account::deposit(float depositValue)
@@ -23,17 +23,7 @@ const float Account::getAccountValue()
   return accountValue;
 }
 
-void Account::setOwnerName(std::string newOwnerName)
-{
-  ownerName = newOwnerName;
-}
-
 std::string Account::getAccountOwner()
 {
   return ownerName;
-}
-
-void Account::setOwnerCpf(std::string newOwnerCpf)
-{
-	ownerCpf = newOwnerCpf;
 }
