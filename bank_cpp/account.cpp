@@ -18,7 +18,7 @@ void Account::withdraw(float withdrawValue)
   accountValue -= withdrawValue;
 }
 
-float Account::getAccountValue()
+const float Account::getAccountValue()
 {
   return accountValue;
 }
@@ -31,4 +31,9 @@ void Account::setOwnerName(std::string newOwnerName)
 std::string Account::getAccountOwner()
 {
   return ownerName;
+}
+
+void Account::setOwnerCpf(std::string newOwnerCpf)
+{
+	ownerCpf = newOwnerCpf;
 }

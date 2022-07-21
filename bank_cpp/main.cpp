@@ -8,6 +8,7 @@ int main()
 
 	myAcc.deposit(200);
 	myAcc.setOwnerName("Igor");
+	myAcc.setOwnerCpf("111.111.111-11");
 
 	std::cout << myAcc.getAccountValue() << std::endl;
 	std::cout << myAcc.getAccountOwner() << std::endl;
