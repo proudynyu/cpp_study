@@ -10,6 +10,7 @@ int main()
 
 	std::cout << myAcc.getAccountValue() << std::endl;
 	std::cout << myAcc.getAccountOwner() << std::endl;
+	std::cout << Account::getAccountCount() << std::endl;
 
 	return 0;
 }
